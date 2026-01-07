@@ -128,7 +128,8 @@ namespace DatabaseBackupService_TaskScheduler
         protected override void OnStop()
         {
             Log("Service Stopped");
-            _ = System.Threading.Tasks.Task.Run(() => UpdateTaskSchedulerInterval());
+            //_ = System.Threading.Tasks.Task.Run(() => UpdateTaskSchedulerInterval());
+            UpdateTaskSchedulerInterval();
         }
 
         private void UpdateTaskSchedulerInterval()
@@ -163,6 +164,10 @@ namespace DatabaseBackupService_TaskScheduler
                     null, null, TaskLogonType.S4U);
 
                     Log($"Task {existingTask.Name} updated successfully to {newDaysInterval} days.");
+                }
+                else
+                {
+                    Log("Access Denied or Task not found. Please ensure the app is running with Administrative privileges.");
                 }
             }
         }

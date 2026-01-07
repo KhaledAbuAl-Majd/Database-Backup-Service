@@ -1,12 +1,12 @@
-﻿# 🚀 SQL Server Automated Backup Suite
+﻿﻿# 🚀 SQL Server Automated Backup Suite
 
-A professional Windows Service-based solution for automated SQL Server database backups. This repository demonstrates two distinct architectural patterns for handling scheduled tasks in Windows, both engineered for high reliability and automated deployment.
+A professional Windows Service-based solution for automated SQL Server database backups. This repository demonstrates two distinct architectural for handling scheduled tasks in Windows, both designed for high reliability and automated deployment.
 
 ---
 
 ## 📁 Repository Structure
 
-* **`/Timer-Based-Service`**: Traditional architecture using `System.Timers.Timer` for continuous background monitoring and execution.
+* **`/Timer-Based-Service`**: Traditional architecture using `System.Threading.Timer` for continuous background monitoring and execution.
 * **`/Task-Scheduler-Service`**: Modern hybrid approach combining a **Manual Windows Service** with the **Windows Task Scheduler API** for peak resource efficiency.
 
 ---
@@ -52,10 +52,7 @@ A professional Windows Service-based solution for automated SQL Server database 
 > **Note**: This project is configured to run in **Console Mode** by default to allow immediate testing and debugging. To deploy as a formal service, use the provided Setup Project.
 
 ---
-
 🔗 **Connect with me:**
 * [GitHub Profile](https://github.com/KhaledAbuAl-Majd)
 * [LinkedIn Profile](https://www.linkedin.com/in/khaledabualmajd1)
 
----
-*Professional Portfolio Project - 2026*
