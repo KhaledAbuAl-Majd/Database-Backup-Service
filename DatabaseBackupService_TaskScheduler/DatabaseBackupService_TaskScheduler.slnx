@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="DatabaseBackupService_TaskScheduler.csproj" Id="068f0740-5ae4-49f2-9cb6-3926e47ff25b" />
+  <Project Path="Setup1/Setup1.vdproj" Type="Installer">
+    <Build />
+  </Project>
+</Solution>
